@@ -7,8 +7,8 @@ Original file is located at
     https://colab.research.google.com/drive/1xmSYIpF-bTChTHuoE2UFvIFeCXaXOQBr
 """
 
-import folium
-from folium import plugins
+import folium # type: ignore
+from folium import plugins # type: ignore
 
 sete_maravilhas = ["Grande Muralha da China",
                    "Cristo Redentor","Machu Picchu",
@@ -45,7 +45,7 @@ local_map
 
 """# Nova seção"""
 
-from google.colab import drive
+from google.colab import drive # type: ignore
 drive.mount('/content/drive')
 
 local_map = folium.Map(location=[-22.951649233528503, -43.21050866252006], zoom_start=5, control_scale=True, tiles="Cartodbpositron")
